@@ -9,7 +9,17 @@ public class Pessoa {
     onde estiverem. Porém, todas as classes que estão no mesmo pacote também
     vão ter acesso.
      */
+    static {
+        System.out.println("Dentro do bloco de inicialização estático de pessoa");
+    }
+    {
+        System.out.println("Dentro do bloco de inicialização de pessoa 1");
+    }
+    {
+        System.out.println("Dentro do bloco de inicialização de pessoa 2");
+    }
     public Pessoa(String nome) {
+        System.out.println("Dentro do construtor de pessoa");
         this.nome = nome;
     }
     public Pessoa(String nome, String cpf) {
